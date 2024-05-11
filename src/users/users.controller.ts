@@ -12,6 +12,7 @@ export class UsersController {
     @Post('/registration')
     async registration(@Body() dto: RegistrationDto) {
         return await this.usersService.registration(dto)
+        
     }
 
     @Post('/login')
